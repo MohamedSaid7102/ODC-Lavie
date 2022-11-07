@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* General */
+  .focus-visible-state {
+    @apply focus-visible:outline-primary focus-visible:outline-[3px] focus-visible:outline-offset-4  focus-visible:rounded-md focus-visible:outline-dotted;
+  }
+  .auth-navlink {
+    @apply border-b-[2px] border-solid border-transparent p-[1rem];
+  }
+  .active-auth-navlink {
+    @apply text-primary font-bold border-b-[2px] border-solid border-primary p-[1rem];
+  }
+
+  .form-group-col {
+    @apply flex flex-col items-start gap-3 w-[100%];
+  }
+  .form-group-row {
+    @apply flex flex-row justify-start items-center gap-1 w-[100%];
+  }
+
+  .form-label {
+    @apply text-gray-700 capitalize;
+  }
+
+  .form-input {
+    @apply text-gray-800 border-[1px] border-gray-400 rounded-lg p-[10px] w-full;
+  }
+
+  .text-icon-btn {
+    @apply bg-white flex justify-center items-center gap-6 border-gray-600 border-[1px] p-4 pl-8 w-[100%] rounded-md
+    sm:justify-start 
+    focus-visible-state focus:bg-slate-300
+    hover:bg-slate-200;
+  }
+
+  .text-icon-btn-black {
+    @apply text-icon-btn bg-black text-white hover:bg-slate-900 lg:max-w-[15rem];
+  }
+
+  .left-auth-decoration {
+    @apply absolute top-[100px] left-[-30px] scale-50 sm:scale-100 z-[-100];
+  }
+  .left-auth-decoration-varient {
+    @apply rotate-[20deg] top-[110px] left-[-10px];
+  }
+
+  .right-auth-decoration {
+    @apply absolute bottom-[-200px] right-[-20px] rotate-[-20deg] scale-50 sm:scale-100 sm:rotate-[-40deg] sm:right-[20px] z-[-100];
+  }
+  .right-auth-decoration-varient {
+    @apply rotate-[20deg] bottom-[-180px] right-[-40px]
+    sm:right-[-20px] sm:rotate-[-10deg];
+  }
+
+  .smooth-transition {
+    @apply transition-all duration-200 ease-in-out;
+  }
+}
+
+/* Native css */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.up-down-items-side-scroller :nth-child(odd) {
+  align-self: flex-start;
+}
+.up-down-items-side-scroller :nth-child(even) {
+  align-self: flex-end;
+}
+
