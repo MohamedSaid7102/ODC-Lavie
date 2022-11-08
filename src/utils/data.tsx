@@ -5,13 +5,13 @@ export const loginNavBarItems: NavbarListType = [
   {
     id: 0,
     dom: <img src="/assets/images/logo.png" alt="logo" />,
-    path: '/home',
+    path: '/',
     navigatable: true,
   },
   {
     id: 1,
     dom: <span>Home</span>,
-    path: '/home',
+    path: '/',
     navigatable: true,
   },
   {
@@ -23,7 +23,7 @@ export const loginNavBarItems: NavbarListType = [
   {
     id: 3,
     dom: <span>Blog</span>,
-    path: '/blog',
+    path: '/blogs',
     navigatable: true,
   },
   {
@@ -34,8 +34,8 @@ export const loginNavBarItems: NavbarListType = [
   },
   {
     id: 5,
-    dom: <span>Commnity</span>,
-    path: '/commnity',
+    dom: <span>Community</span>,
+    path: '/community',
     navigatable: true,
   },
   {

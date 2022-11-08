@@ -16,33 +16,33 @@
 // import { Facebook } from './common/buttons/Facebook';
 // import { Google } from './common/buttons/Google';
 // import { PlaystoreBtn } from './common/buttons/PlaystoreBtn';
-// import { MenueBtn } from './common/buttons/MenueBtn';
+import { MenueBtn } from './common/buttons/MenueBtn';
 // // 2.2. cards
 // import { Description } from './common/cards/Description';
 // import { Blog } from './common/cards/Blog';
 // // 2.3. navbar
-// import { MobileNavbar } from './common/navbar/MobileNavbar';
-// import { Navbar } from './common/navbar/Navbar';
-// import { NavbarItem } from './common/navbar/NavbarItem';
+import { MobileNavbar } from './common/navbar/MobileNavbar';
+import { Navbar } from './common/navbar/Navbar';
+import { NavbarItem } from './common/navbar/NavbarItem';
 
-// export {
-//   AboutUs,
-//   BlogSection,
-//   CategoriesSection,
-//   Hero,
-//   MobileAppSection,
-//   AuthWrapper,
-//   BestSellerSection,
-//   Footer,
-//   AppleBtn,
-//   CustomBranchBtn,
-//   Facebook,
-//   Google,
-//   PlaystoreBtn,
-//   MenueBtn,
-//   Description,
-//   Blog,
-//   MobileNavbar,
-//   Navbar,
-//   NavbarItem,
-// };
+export {
+  //   AboutUs,
+  //   BlogSection,
+  //   CategoriesSection,
+  //   Hero,
+  //   MobileAppSection,
+  //   AuthWrapper,
+  //   BestSellerSection,
+  //   Footer,
+  //   AppleBtn,
+  //   CustomBranchBtn,
+  //   Facebook,
+  //   Google,
+  //   PlaystoreBtn,
+  MenueBtn,
+  //   Description,
+  //   Blog,
+  MobileNavbar,
+  Navbar,
+  NavbarItem,
+};

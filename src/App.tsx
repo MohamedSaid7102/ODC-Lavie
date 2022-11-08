@@ -1,16 +1,15 @@
 import React from 'react';
+import { Link, Outlet, Route, Routes } from 'react-router-dom';
+import { Navbar } from '@components/';
+import { loginNavBarItems } from '@utils/data';
 
 type Props = {};
 
 function App({}: Props) {
   return (
     <div>
-      <h1 className="font-light text-red-500">Hello world</h1>
-      <p className="text-blue-900">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit
-        corporis praesentium numquam? Dolor necessitatibus porro delectus libero
-        voluptatibus voluptatem?
-      </p>
+      <Navbar list={loginNavBarItems} />
+      <Outlet />
     </div>
   );
 }
