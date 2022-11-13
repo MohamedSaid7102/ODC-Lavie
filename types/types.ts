@@ -15,3 +15,13 @@ export type CategoriesCardProps = {
 };
 
 export type categoriesCardsDataType = CategoriesCardProps[];
+
+// Best seller section
+export type BestSellerCardProps = {
+  title: string;
+  price: string;
+  imgSrc: string;
+  imgAlt: string;
+};
+
+export type bestSellerCardsDataType = BestSellerCardProps[];

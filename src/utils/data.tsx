@@ -1,4 +1,8 @@
-import { categoriesCardsDataType, NavbarListType } from '@myTypes/types';
+import {
+  bestSellerCardsDataType,
+  categoriesCardsDataType,
+  NavbarListType,
+} from '@myTypes/types';
 import React from 'react';
 
 export const loginNavBarItems: NavbarListType = [
@@ -53,6 +57,7 @@ export const loginNavBarItems: NavbarListType = [
   },
 ];
 
+// Categories Section
 export const categoriesCardsData: categoriesCardsDataType = [
   {
     title: 'Tools',
@@ -113,5 +118,81 @@ export const categoriesCardsData: categoriesCardsDataType = [
     title: 'Low Light Plants',
     imgSrc: '/assets/images/p6.png',
     imgAlt: 'Plant',
+  },
+];
+
+// Best seller Section
+export const bestSellerCardsData: bestSellerCardsDataType = [
+  {
+    title: 'spider plant',
+    imgSrc: '/assets/images/p9.png',
+    imgAlt: 'Plant',
+    price: '100 EGP',
+  },
+  {
+    title: 'juniper bonsai',
+    imgSrc: '/assets/images/p7.png',
+    imgAlt: 'Plant',
+    price: '190 EGP',
+  },
+  {
+    title: 'snake plant',
+    imgSrc: '/assets/images/p8.png',
+    imgAlt: 'Plant',
+    price: '180 EGP',
+  },
+  {
+    title: 'spider plant',
+    imgSrc: '/assets/images/p9.png',
+    imgAlt: 'Plant',
+    price: '100 EGP',
+  },
+  {
+    title: 'juniper bonsai',
+    imgSrc: '/assets/images/p7.png',
+    imgAlt: 'Plant',
+    price: '190 EGP',
+  },
+  {
+    title: 'snake plant',
+    imgSrc: '/assets/images/p8.png',
+    imgAlt: 'Plant',
+    price: '180 EGP',
+  },
+  {
+    title: 'spider plant',
+    imgSrc: '/assets/images/p9.png',
+    imgAlt: 'Plant',
+    price: '100 EGP',
+  },
+  {
+    title: 'juniper bonsai',
+    imgSrc: '/assets/images/p7.png',
+    imgAlt: 'Plant',
+    price: '190 EGP',
+  },
+  {
+    title: 'snake plant',
+    imgSrc: '/assets/images/p8.png',
+    imgAlt: 'Plant',
+    price: '180 EGP',
+  },
+  {
+    title: 'spider plant',
+    imgSrc: '/assets/images/p9.png',
+    imgAlt: 'Plant',
+    price: '100 EGP',
+  },
+  {
+    title: 'juniper bonsai',
+    imgSrc: '/assets/images/p7.png',
+    imgAlt: 'Plant',
+    price: '190 EGP',
+  },
+  {
+    title: 'snake plant',
+    imgSrc: '/assets/images/p8.png',
+    imgAlt: 'Plant',
+    price: '180 EGP',
   },
 ];
