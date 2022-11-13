@@ -1,4 +1,4 @@
-import { NavbarListType } from '@myTypes/types';
+import { categoriesCardsDataType, NavbarListType } from '@myTypes/types';
 import React from 'react';
 
 export const loginNavBarItems: NavbarListType = [
@@ -50,5 +50,68 @@ export const loginNavBarItems: NavbarListType = [
     ),
     path: '/signup',
     navigatable: true,
+  },
+];
+
+export const categoriesCardsData: categoriesCardsDataType = [
+  {
+    title: 'Tools',
+    imgSrc: '/assets/images/p4.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Seeds',
+    imgSrc: '/assets/images/p5.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Low Light Plants',
+    imgSrc: '/assets/images/p6.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Tools',
+    imgSrc: '/assets/images/p4.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Seeds',
+    imgSrc: '/assets/images/p5.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Low Light Plants',
+    imgSrc: '/assets/images/p6.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Tools',
+    imgSrc: '/assets/images/p4.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Seeds',
+    imgSrc: '/assets/images/p5.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Low Light Plants',
+    imgSrc: '/assets/images/p6.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Tools',
+    imgSrc: '/assets/images/p4.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Seeds',
+    imgSrc: '/assets/images/p5.png',
+    imgAlt: 'Plant',
+  },
+  {
+    title: 'Low Light Plants',
+    imgSrc: '/assets/images/p6.png',
+    imgAlt: 'Plant',
   },
 ];
