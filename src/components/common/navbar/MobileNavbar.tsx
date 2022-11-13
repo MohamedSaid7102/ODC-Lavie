@@ -15,7 +15,7 @@ export const MobileNavbar: React.FC = () => {
     >
       {/* Logo */}
       {!menueOpen && (
-        <NavLink to="/home" className="focus-visible-state">
+        <NavLink to="/" className="focus-visible-state">
           <img
             src="assets/images/logo.png"
             alt="logo"

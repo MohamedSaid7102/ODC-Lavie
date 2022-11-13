@@ -5,6 +5,8 @@ import { RootState } from '@redux/store';
 // Hiding navbar logic
 import useOnLoseFocuse from '@hooks/useOnLoseFocuse';
 import { hideNavbar } from '@redux/features/navbarSlice';
+import { useResize } from '@hooks/useResize';
+import { NAVBAR_BREAKPOINT } from '@components/common/navbar/';
 
 type NavbarItemType = {
   id: number;
@@ -20,34 +22,17 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ list }) => {
   const menueOpen = useSelector((state: RootState) => state.navbar.menueOpen);
-
-  // ----------- Closing navbar on specific cases logic start ----------
   const dispatch = useDispatch();
-  const navbarRef = useRef(null);
+  const navbarRef = useRef<HTMLElement | null>(null);
+
   useOnLoseFocuse(navbarRef, () => {
     dispatch(hideNavbar());
   });
-  // ----------- Closing navbar on specific cases logic end -----------
 
-  const [windowDimenion, detectHW] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+  const hideMobileNav = () => menueOpen && dispatch(hideNavbar());
 
-  const detectSize = () => {
-    detectHW({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  };
+  const [windowWidth, windowHeight] = useResize(hideMobileNav); // pass hideMobileNav on resize
 
-  useEffect(() => {
-    window.addEventListener('resize', detectSize);
-
-    return () => {
-      window.removeEventListener('resize', detectSize);
-    };
-  }, [windowDimenion]);
   return (
     <>
       <nav
@@ -56,13 +41,13 @@ export const Navbar: React.FC<NavbarProps> = ({ list }) => {
       z-30 border-[1px] border-solid w-full bg-transparent backdrop-blur
       sm:border-none"
       >
-        {/* Mobile nav start */}
-        {windowDimenion.width < 640 && <MobileNavbar />}
-        {/* Mobile nav end */}
+        {/* Mobile nav */}
+        {windowWidth < NAVBAR_BREAKPOINT && <MobileNavbar />}
+        {/* Desktop nav */}
         <ul
           className={`
           ${
-            windowDimenion.width >= 640
+            windowWidth >= NAVBAR_BREAKPOINT
               ? 'h-max opacity-1 select-all pointer-events-auto'
               : menueOpen
               ? 'h-max'

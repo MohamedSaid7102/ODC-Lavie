@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { RootState } from '@redux/store';
-// import { NavbarItemType } from '@types/types';
+import { useResize } from '@hooks/useResize';
+import { NAVBAR_BREAKPOINT } from '@components/common/navbar/';
+
 type NavbarItemType = {
   id: number;
   dom: JSX.Element;
@@ -17,25 +19,9 @@ interface NavbarItemProps {
 
 export const NavbarItem: React.FC<NavbarItemProps> = ({ item }) => {
   const menueOpen = useSelector((state: RootState) => state.navbar.menueOpen);
-  const [windowDimenion, detectHW] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
 
-  const detectSize = () => {
-    detectHW({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  };
+  const [windowWidth, windowHeight] = useResize();
 
-  useEffect(() => {
-    window.addEventListener('resize', detectSize);
-
-    return () => {
-      window.removeEventListener('resize', detectSize);
-    };
-  }, [windowDimenion]);
   return (
     <>
       {item.navigatable ? (
@@ -52,7 +38,7 @@ export const NavbarItem: React.FC<NavbarItemProps> = ({ item }) => {
                 ? 'text-primary w-full h-full flex justify-center py-3 focus-visible-state'
                 : ' w-full h-full flex justify-center py-3 hover:text-slate-600 hover:underline focus-visible-state'
             }
-            tabIndex={windowDimenion.width > 640 ? 0 : !menueOpen ? -1 : 0}
+            tabIndex={windowWidth > NAVBAR_BREAKPOINT ? 0 : !menueOpen ? -1 : 0}
           >
             {item.dom}
           </NavLink>

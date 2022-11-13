@@ -16,7 +16,9 @@ function useOnLoseFocuse(ref: any, cb: Function) {
 
   // 2. Close on ESC Pressed
   const escFunction = useCallback((event: any) => {
-    if (event.key === 'Escape') cb();
+    if (event.key === 'Escape') {
+      cb();
+    }
   }, []);
   useEffect(() => {
     document.addEventListener('keydown', escFunction);
