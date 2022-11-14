@@ -2,7 +2,17 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // Componenets
 import App from '../App';
-import { ErrorPage, Home, Blogs, Blog, Community, Shop } from '@pages/';
+import {
+  ErrorPage,
+  Home,
+  Blogs,
+  Blog,
+  Community,
+  Shop,
+  Signin,
+  Signup,
+} from '@pages/';
+import { AboutUs, AuthWrapper } from '@components/';
 
 export const router = createBrowserRouter([
   {
@@ -14,17 +24,25 @@ export const router = createBrowserRouter([
       // Singin
       {
         path: '/signin',
-        element: <h1>Signin</h1>,
+        element: (
+          <AuthWrapper>
+            <Signin />
+          </AuthWrapper>
+        ),
       },
       // Signup
       {
         path: '/signup',
-        element: <h1>Signup</h1>,
+        element: (
+          <AuthWrapper>
+            <Signup />
+          </AuthWrapper>
+        ),
       },
       // About
       {
         path: '/about',
-        element: <div>about</div>,
+        element: <AboutUs />,
       },
       {
         path: '/blogs',
@@ -41,6 +59,10 @@ export const router = createBrowserRouter([
       {
         path: '/community',
         element: <Community />,
+      },
+      {
+        path: '/password-reset',
+        element: <h1>Reset Your Password goese here</h1>,
       },
     ],
   },
