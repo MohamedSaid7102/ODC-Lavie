@@ -14,7 +14,7 @@ export type CategoriesCardProps = {
   imgAlt: string;
 };
 
-export type categoriesCardsDataType = CategoriesCardProps[];
+export type CategoriesCardsDataType = CategoriesCardProps[];
 
 // Best seller section
 export type BestSellerCardProps = {
@@ -24,4 +24,16 @@ export type BestSellerCardProps = {
   imgAlt: string;
 };
 
-export type bestSellerCardsDataType = BestSellerCardProps[];
+export type BestSellerCardsDataType = BestSellerCardProps[];
+
+// Blog section
+
+export type BlogCardProps = {
+  imageSrc: string;
+  imageAlt: string;
+  heading: string;
+  desc: string;
+  time: string;
+};
+
+export type BlogCardsDataType = BlogCardProps[];

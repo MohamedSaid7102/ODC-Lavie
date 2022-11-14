@@ -13,7 +13,7 @@ export const CategoriesSection: React.FC = () => {
         <br />
         Categories
       </h2>
-      <div className="flex flex-row flex-nowrap gap-10 overflow-x-auto px-10 focus-visible-state">
+      <div className="flex flex-row flex-nowrap gap-10 overflow-x-auto px-10 py-8 focus-visible-state">
         {/* card */}
         {categoriesCardsData.map(({ imgSrc, imgAlt, title }) => (
           <CategoriesCard imgSrc={imgSrc} imgAlt={imgAlt} title={title} />

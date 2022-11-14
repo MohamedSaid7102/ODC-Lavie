@@ -1,6 +1,7 @@
 import {
-  bestSellerCardsDataType,
-  categoriesCardsDataType,
+  BestSellerCardsDataType,
+  BlogCardsDataType,
+  CategoriesCardsDataType,
   NavbarListType,
 } from '@myTypes/types';
 import React from 'react';
@@ -58,7 +59,7 @@ export const loginNavBarItems: NavbarListType = [
 ];
 
 // Categories Section
-export const categoriesCardsData: categoriesCardsDataType = [
+export const categoriesCardsData: CategoriesCardsDataType = [
   {
     title: 'Tools',
     imgSrc: '/assets/images/p4.png',
@@ -122,7 +123,7 @@ export const categoriesCardsData: categoriesCardsDataType = [
 ];
 
 // Best seller Section
-export const bestSellerCardsData: bestSellerCardsDataType = [
+export const bestSellerCardsData: BestSellerCardsDataType = [
   {
     title: 'spider plant',
     imgSrc: '/assets/images/p9.png',
@@ -194,5 +195,93 @@ export const bestSellerCardsData: bestSellerCardsDataType = [
     imgSrc: '/assets/images/p8.png',
     imgAlt: 'Plant',
     price: '180 EGP',
+  },
+];
+
+// Blog Section
+export const blogCardsData: BlogCardsDataType = [
+  {
+    imageSrc: '/assets/images/p10.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p1.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p3.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p10.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p1.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p3.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p10.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p1.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p3.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p10.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p1.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
+  },
+  {
+    imageSrc: '/assets/images/p3.png',
+    imageAlt: 'Plant',
+    heading: '5 simple tips treat plant',
+    desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
+    time: '2 days ago',
   },
 ];
