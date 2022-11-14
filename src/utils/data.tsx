@@ -2,9 +2,11 @@ import {
   BestSellerCardsDataType,
   BlogCardsDataType,
   CategoriesCardsDataType,
+  linksList,
   NavbarListType,
 } from '@myTypes/types';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const loginNavBarItems: NavbarListType = [
   {
@@ -284,4 +286,39 @@ export const blogCardsData: BlogCardsDataType = [
     desc: 'leaf, in botany, any usually flattened green outgrowth from the stem of',
     time: '2 days ago',
   },
+];
+
+// Footer
+
+export const sectionsLinks: linksList = [
+  <Link className="focus-visible-state" to="home">
+    Home
+  </Link>,
+  <Link className="focus-visible-state" to="category">
+    Category
+  </Link>,
+  <Link className="focus-visible-state" to="new">
+    New
+  </Link>,
+  <Link className="focus-visible-state" to="requestToBeSeller">
+    Request To Be Seller
+  </Link>,
+];
+
+export const contactLinks: linksList = [
+  <a className="focus-visible-state" href="tel:+201096787085">
+    phone: +201096787085
+  </a>,
+  <a className="focus-visible-state" href="tel:+01244522323">
+    phone: +01244522323
+  </a>,
+  <a
+    href="mailto:mohamedshelfwork@gmail.com"
+    className="flex flex-col sm:flex-row flex-wrap justify-start focus-visible-state"
+  >
+    <span>Email:</span> <span>mohamedshelfwork@gmail.com</span>
+  </a>,
+  <a href="#!" className="focus-visible-state">
+    <span>6 October city ,Giza ,egypt</span>
+  </a>,
 ];

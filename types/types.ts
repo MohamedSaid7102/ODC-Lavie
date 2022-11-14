@@ -1,3 +1,5 @@
+import { ReactElement } from 'react';
+
 export type NavbarItemType = {
   id: number;
   dom: JSX.Element;
@@ -37,3 +39,12 @@ export type BlogCardProps = {
 };
 
 export type BlogCardsDataType = BlogCardProps[];
+
+// Footer
+
+export type linksList = ReactElement<HTMLElement>[];
+
+export type FooterSectionProps = {
+  heading: string;
+  listOfLinks: linksList;
+};
