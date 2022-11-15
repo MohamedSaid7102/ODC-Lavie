@@ -4,6 +4,8 @@ import { AboutUs } from './AboutUsSection';
 import { BlogSection } from './BlogSection';
 import { CategoriesSection } from './CategoriesSection';
 import { MobileAppSection } from './MobileAppSection';
+import { Callout } from './Callout';
+
 // 1. authuntication dir
 import { AuthWrapper } from './common/auth/AuthWrapper';
 // 2. common dir
@@ -54,4 +56,5 @@ export {
   Google,
   NewsLetterForm,
   AuthWrapper,
+  Callout,
 };

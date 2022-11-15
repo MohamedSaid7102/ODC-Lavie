@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import navbarSlice from '@redux/features/navbarSlice';
+import calloutSlice from '@redux/features/calloutSlice';
 
 export const store = configureStore({
   reducer: {
     navbar: navbarSlice,
+    callout: calloutSlice,
   },
 });
 

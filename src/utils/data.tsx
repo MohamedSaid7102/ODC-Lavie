@@ -48,10 +48,7 @@ export const loginNavBarItems: NavbarListType = [
   {
     id: 6,
     dom: (
-      <button
-        className="bg-primary hover:bg-slate-700 text-white px-4 py-2 rounded-md"
-        tabIndex={-1}
-      >
+      <button className="primary-btn" tabIndex={-1}>
         Sign Up
       </button>
     ),

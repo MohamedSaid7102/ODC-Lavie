@@ -1,5 +1,6 @@
 import { useCallback, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useOnESC } from './useOnESC';
 
 /**
  * Use this hook to invoke a function 'perform a logic' on:
@@ -15,17 +16,7 @@ function useOnLoseFocuse(ref: any, cb: Function) {
   useEffect(() => cb(), [location]);
 
   // 2. Close on ESC Pressed
-  const escFunction = useCallback((event: any) => {
-    if (event.key === 'Escape') {
-      cb();
-    }
-  }, []);
-  useEffect(() => {
-    document.addEventListener('keydown', escFunction);
-    return () => {
-      document.removeEventListener('keydown', escFunction);
-    };
-  }, []);
+  useOnESC(cb);
 
   // 3. Close on Clicking outside
   function handleClickOutside(event: any) {

@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         primary: 'hsl(112 100% 37%)',
         footerBg: '#FAFAFA',
+        transparentDark: 'rgba(0, 0, 0, 0.75)',
       },
       screens: {
         'hero-break-1': '750px',
