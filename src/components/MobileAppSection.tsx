@@ -14,11 +14,29 @@ export const MobileAppSection: React.FC = () => {
       </div>
       {/* Right */}
       <div className="flex flex-col gap-[1rem] sm:gap-[2rem] max-w-[50rem]">
-        <h2 className="font-[900] whitespace-pre-wrap text-2xl mobile-app-break-1:text-7xl relative w-max">
-          Mobile Application
-          <span className="absolute mobile-app-break-1:top-[-30px] mobile-app-break-1:right-[-4.5rem] top-[-15px] right-[-3rem] font-extralight">
-            _
+        <h2 className="font-[900] text-4xl sm:text-7xl relative w-max leading-[1.8]">
+          Mobile{' '}
+          <span className="absolute sm:top-[35px] top-[30px] right-[10px] font-extralight w-12 sm:w-max overflow-hidden">
+            <svg
+              aria-hidden={true}
+              width="96"
+              height="4"
+              viewBox="0 0 96 4"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="0.988281"
+                y1="2"
+                x2="95.0096"
+                y2="2"
+                stroke="black"
+                stroke-width="4"
+              />
+            </svg>
           </span>
+          <br />
+          Application
         </h2>
         <div className="sm:pl-7 pl-1">
           <p className="sm:text-xl text-slate-500 ">

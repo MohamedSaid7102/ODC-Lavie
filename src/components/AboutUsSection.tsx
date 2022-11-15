@@ -7,8 +7,24 @@ export const AboutUs: React.FC = () => {
       <div className="flex flex-col gap-[1rem] sm:gap-[2rem] max-w-[40rem]">
         <h2 className="font-[900] text-4xl sm:text-7xl relative w-max">
           About us{' '}
-          <span className="absolute sm:top-[-30px] sm:right-[-4.5rem] top-[-15px] right-[-3rem] font-extralight">
-            __
+          <span className="absolute sm:top-[40px] sm:right-[-100px] top-[35px] right-[10px] font-extralight w-9 sm:w-max overflow-hidden">
+            <svg
+              aria-hidden={true}
+              width="96"
+              height="4"
+              viewBox="0 0 96 4"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="0.988281"
+                y1="2"
+                x2="95.0096"
+                y2="2"
+                stroke="black"
+                stroke-width="4"
+              />
+            </svg>
           </span>
         </h2>
         <p className="sm:text-xl text-slate-500 sm:pl-7 pl-1">
